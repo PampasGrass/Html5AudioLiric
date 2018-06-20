@@ -66,8 +66,8 @@ function fn(sgname){
         };    
     });    
 }
- 
-fn($('.songs_list li:nth-child(1)').text());   
+alert($("#sel").prop(""));
+//fn($('#sel')[0].'selectedIndex');   
 
 
 
