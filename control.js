@@ -95,8 +95,8 @@ window.onload = function(){
     au.ontimeupdate = function(){
         var i = findCurrentLyric(str ,this.currentTime);  
         $('#gc #screen').css('top',-i*63+150+'px'); //让歌词向上移动    
-        $('#gc #screen li').css('visibility','hidden');    
-        $('#gc #screen li:nth-child('+(i+1)+')').css('visibility','visible'); //高亮显示当前播放的哪一句歌词    
+        $('#gc #screen li').css('opacity','0');    
+        $('#gc #screen li:nth-child('+(i+1)+')').css('opacity','1'); //高亮显示当前播放的哪一句歌词    
     } 
 }
 

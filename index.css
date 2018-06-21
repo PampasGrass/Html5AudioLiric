@@ -57,11 +57,13 @@ background-size:200px 200px;
     left: 50%;
     font-size: 3em;
     list-style: none;
+    transition:top 1s linear;
 }
 #screen li{
     height: 63px;/*日文就比中文高，改了就跑*/
     position: relative;
     right: 50%;
     color: rgba(240, 96, 12, 0.561);
-    visibility: hidden;
+    opacity: 0;
+    transition:opacity 1s linear;
 }
