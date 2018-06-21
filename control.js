@@ -16,8 +16,8 @@ window.onload = function(){
     //下拉菜单选歌
     sel.onchange = function(e){
         num = e.target.selectedIndex;
-        au.src =  "music/"+music[num]+".mp3";
         refreshLyric();
+        au.src =  "music/"+music[num]+".mp3";
         au.play();
     }
 
