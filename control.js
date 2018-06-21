@@ -139,7 +139,7 @@ function refreshLyric(){
     var a = "https://pampasgrass.github.io/Html5AudioLiric/lyric/" + music[num] + ".lrc";
     $.get(a,function(data){
         str = parseLyric(data);
-        screen.innerHTML ="";
+        $('#gc #screen').html("");//edge在这里不支持innerhtml
         for(var i = 0, li; i < str.length; i++){    
             li=('<li>'+str[i][1]+'</li>');    
             $('#gc #screen').append(li);    
