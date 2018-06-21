@@ -4,55 +4,51 @@
 		<meta charset = "UTF-8">
 		<script src="control.js"></script>
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-		<script src="lyric.js"></script>
+		<link rel="stylesheet" href="index.css">
 	</head>
 	<body>
-		<div> 
-			下拉菜单选歌：
-			<select id="sel">
-				<option value="0" selected>戴荃 - 悟空</option>
-				<option value="1">凤飞飞 - 追梦人</option>
-				<option value="2">李宇春 - 再不疯狂我们就老了</option>
-				<option value="3">李宗盛 - 山丘</option>
-				<option value="4">马頔 - 傲寒</option>
-				<option value="5">南里侑香 - 暁の車</option>
-				<option value="6">牛奶咖啡 - 早上好</option>
-				<option value="7">朴树 - 那些花儿</option>
-				<option value="8">陶晶莹 - 走路去纽约</option>
-				<option value="9">羽泉 - 老男孩</option>
-			</select>
-			<br>
-			<audio id="audio" src="music/戴荃 - 悟空.mp3" controls autoplay loop></audio>
-			<br>
-			<br>
-			<div>
-				<button id="btn-play" >播放</button>  
-				<button id="btn-stop" >暂停</button>  
-				<button id="btn-pre" >上一首</button>  
-				<button id="btn-next" >下一首</button>
-				<button id="loop" >单曲循环：开</button>
-				<button id="return">复位</button>
-				<button id="go-for">快进</button>
-				<button id="go-bac">快退</button>
+
+		<div id="out">
+			<div id="up">
+				下拉菜单选歌:
+				<select id="sel">
+					<option value="0" selected>戴荃 - 悟空</option>
+					<option value="1">凤飞飞 - 追梦人</option>
+					<option value="2">李宇春 - 再不疯狂我们就老了</option>
+					<option value="3">李宗盛 - 山丘</option>
+					<option value="4">马頔 - 傲寒</option>
+					<option value="5">南里侑香 - 暁の車</option>
+					<option value="6">牛奶咖啡 - 早上好</option>
+					<option value="7">朴树 - 那些花儿</option>
+					<option value="8">陶晶莹 - 走路去纽约</option>
+					<option value="9">羽泉 - 老男孩</option>
+				</select>	
 			</div>
 
+			<br> 
 
+			<div>
+				<button id="btn-play" class="button">播放</button>  
+				<button id="btn-stop" class="button">暂停</button>  
+				<button id="btn-pre" class="button">上一首</button>  
+				<button id="btn-next" class="button">下一首</button>
+				<button id="loop" class="button">单曲循环：开</button>
+				<button id="return" class="button">复位</button>
+				<button id="go-for" class="button">快进</button>
+				<button id="go-bac" class="button">快退</button>
+			</div>
+		</div>
+		<div id="as">
+			<audio id="audio" src="music/戴荃 - 悟空.mp3" controls autoplay loop></audio>
 		</div>
 
 
-		<audio src="music/Yesterday Once More.mp3" id="aud" autoplay="autoplay" controls="controls" preload="auto">    
-			您的浏览器不支持audio属性，请更换浏览器在进行浏览。    
-			</audio>   
-			<div class="songs_cnt">    
-				<ul class="songs_list">    
-				<li>Yesterday Once More</li>    
-				<li>You Are Beautiful</li>    
-				</ul>    
-				<button class="sel_song">点<br/><br/>我</button>    
-				</div>    
-				<div id="gc">    
-				<ul></ul>    
-				</div>   
+
+
+    
+		<div id="gc">    
+			<ul id = "screen"></ul>    
+		</div>   
 		
 	</body>
 

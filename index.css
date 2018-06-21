@@ -1,0 +1,66 @@
+body{
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    background:repeating-linear-gradient(60deg,rgb(51, 51, 50), rgb(51, 51, 50) 50px,
+            rgb(72, 76, 80),rgb(72, 76, 80) 300px);
+background-size:200px 200px;
+}
+
+/*控制面板*/
+#out{
+    background-color: darkgrey;
+    border-radius: 5px;
+    width: 600px;
+    height: 90px;;
+}
+#up{
+    width: 400px;
+    margin-left: 100px;
+    display: block;
+    padding-top: 10px;
+}
+#up{
+    font-size: 1em;
+    color: rgba(173, 67, 5, 0.904);
+}
+#up select{
+    color: rgba(173, 67, 5, 0.904);
+    background-color:  darkgrey;
+    font-size: 1em;
+}
+
+#gc #screen{
+    position: absolute;
+    z-index: -1;
+}
+.button{
+    background-color:rgb(235, 232, 232);
+    color: rgba(255, 94, 0, 0.555);
+    margin: 0;
+    width:60px;
+    height:30px;
+    font-weight:bold;
+    border-radius:10px;
+}
+#loop{
+    width: 120px;
+}
+
+#as{
+    margin-top: 10px;
+}
+
+/*歌词*/
+#screen{
+    padding: 0;
+    left: 50%;
+    font-size: 3em;
+    list-style: none;
+}
+#screen li{
+    position: relative;
+    right: 50%;
+    color: rgba(240, 96, 12, 0.561);
+    visibility: hidden;
+}
