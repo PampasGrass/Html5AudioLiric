@@ -17,6 +17,7 @@ window.onload = function(){
     sel.onchange = function(e){
         num = e.target.selectedIndex;
         au.src =  "music/"+music[num]+".mp3";
+        refreshLyric();
         au.play();
     }
 
@@ -72,21 +73,18 @@ window.onload = function(){
     var btn6 = document.getElementById("return");
     btn6.onclick = function(){
         au.src =  "music/"+music[num]+".mp3";
-         
         au.pause;
     }
 
     //快进
     var btn7 = document.getElementById("go-for");
     btn7.onclick = function(){
-         
         au.currentTime += 10;
     }
 
     //快退
     var btn8 = document.getElementById("go-bac");
     btn8.onclick = function(){
-         
         au.currentTime -= 10;
     }
 
